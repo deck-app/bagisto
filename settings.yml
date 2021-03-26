@@ -34,7 +34,7 @@ user:
   #   hint: Check the box to update mongodb extension 1.5.3 to 1.9.0
   #   target:
   #     MONGODB_VERSION
-  # # mysql_version:
+  # mysql_version:
   #   label:
   #     MySQL version
   #   hint:

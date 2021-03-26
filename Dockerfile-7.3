@@ -87,6 +87,13 @@ ARG SERVER_ROOT
 
 RUN sed -i "s#{SERVER_ROOT}#$SERVER_ROOT#g" /etc/apache2/httpd.conf
 
+ARG DB_NAME
+ARG DB_USER
+ARG DB_PASSWORD
+RUN sed -i "s#{DB_NAME}#$DB_NAME#g" /sbin/app
+RUN sed -i "s#{DB_USER}#$DB_USER#g" /sbin/app
+RUN sed -i "s#{DB_PASSWORD}#$DB_PASSWORD#g" /sbin/app
+
 VOLUME [ "/var/www/" ]
 WORKDIR /var/www
 COPY php_ini/php7.3.ini /etc/php/7.3/php.ini
