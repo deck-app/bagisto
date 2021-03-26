@@ -32,9 +32,9 @@ user:
   #   type:
   #     checkbox
   #   hint: Check the box to update mongodb extension 1.5.3 to 1.9.0
-    # target:
-    #   MONGODB_VERSION
-  # mysql_version:
+  #   target:
+  #     MONGODB_VERSION
+  # # mysql_version:
   #   label:
   #     MySQL version
   #   hint:
@@ -65,10 +65,9 @@ system:
     true
   #For collecting and storing DB in .env
   #db/user/password
-  # db_credentials:
-  #   true
+  db_credentials:
+    true
   #Generate public ports for the docker image
   ports:
     http:
       APACHE_HOST_HTTP_PORT
-      
